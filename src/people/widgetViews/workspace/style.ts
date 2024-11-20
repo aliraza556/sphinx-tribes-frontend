@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Button } from 'components/common';
-import { EuiPanel, EuiTabbedContent } from '@elastic/eui';
+import { EuiPanel, EuiTabbedContent, EuiModalFooter } from '@elastic/eui';
 
 interface SmallBtnProps {
   selected: boolean;
@@ -111,6 +111,7 @@ export const FeatureHeadWrap = styled.div`
 export const HeadNameWrap = styled.div`
   display: flex;
   align-items: center;
+  width: 80rem;
   @media only screen and (max-width: 500px) {
     margin-bottom: 20px;
   }
@@ -1472,4 +1473,13 @@ export const SendStoriesButton = styled.button`
   &:active {
     background-color: #c0c0c0;
   }
+`;
+
+export const FeatureModalBody = styled.div`
+  margin: 5px 0 0 27px;
+  width: 100%;
+`;
+
+export const FeatureModalFooter = styled(EuiModalFooter)`
+  padding: 4px 15px 15px;
 `;
